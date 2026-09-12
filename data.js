@@ -1,7 +1,7 @@
 window.KERMIS_DATA = {
   "meta": {
     "title": "Kermis Lichtenvoorde 2026",
-    "version": "1.5",
+    "version": "2.3",
     "dates": [
       "2026-09-13",
       "2026-09-14",
@@ -10,7 +10,15 @@ window.KERMIS_DATA = {
     "dayBoundaryHour": 5,
     "source": "Centraal kermisprogramma + detailposters van Van Ooijen, Café de Kruup en Bar 't Doktertje/LEO",
     "officialUrl": "https://kermislichtenvoorde.nl",
-    "dataNote": "Exacte detailtijden zijn leidend waar beschikbaar. Programma-vensters geven alleen een gepubliceerd tijdvak aan en worden niet als doorlopende set behandeld."
+    "dataNote": "Exacte detailtijden zijn leidend waar beschikbaar. Programma-vensters geven alleen een gepubliceerd tijdvak aan en worden niet als doorlopende set behandeld.",
+    "badgePeildatum": "12 september 2026",
+    "sponsor": {
+      "name": "Vishandel Bomers",
+      "label": "VIP · Very Important Supplier",
+      "text": "Even opladen tussen de optredens? Haal iets lekkers bij VIP-partner Vishandel Bomers – alle dagen aanwezig op de kermis.",
+      "facebook": "https://www.facebook.com/share/1WGTXNUGQo/?mibextid=wwXIfr",
+      "website": "https://www.vishandelbomers.nl/"
+    }
   },
   "days": [
     {
@@ -34,64 +42,119 @@ window.KERMIS_DATA = {
   ],
   "locations": {
     "zaak": {
-      "name": "De Zaak",
-      "color": "#c13c88",
-      "query": "Cafe De Zaak Lichtenvoorde"
+      "name": "Café de Zaak",
+      "color": "#ff3cac",
+      "mark": "zaak",
+      "query": "Cafe De Zaak Lichtenvoorde",
+      "short": "Café de Zaak",
+      "gridShort": "Café de Zaak",
+      "icon": "CZ",
+      "color2": "#784ba0"
     },
     "zaakMain": {
-      "name": "De Zaak op Straat · hoofdpodium",
-      "color": "#c13c88",
-      "query": "Cafe De Zaak Lichtenvoorde"
+      "name": "De Zaak op Straat",
+      "color": "#ff5f6d",
+      "mark": "stage",
+      "query": "Cafe De Zaak Lichtenvoorde",
+      "short": "Zaak op Straat",
+      "gridShort": "Zaak Straat",
+      "icon": "ZS",
+      "color2": "#ffc371"
     },
     "klaphok": {
-      "name": "De Zaak op Straat · 't Klaphok",
-      "color": "#a9286e",
-      "query": "Cafe De Zaak Lichtenvoorde"
+      "name": "Klaphok de Zaak",
+      "color": "#ff277f",
+      "mark": "klaphok",
+      "query": "Cafe De Zaak Lichtenvoorde",
+      "short": "Klaphok",
+      "gridShort": "Klaphok",
+      "icon": "KZ",
+      "color2": "#7c3aed"
     },
     "markt": {
-      "name": "Kermis op de Markt",
-      "color": "#4b5563",
-      "query": "Markt Lichtenvoorde"
+      "name": "Markt",
+      "color": "#f7c948",
+      "mark": "market",
+      "query": "Markt Lichtenvoorde",
+      "short": "Markt",
+      "icon": "M",
+      "color2": "#ff8a00"
     },
     "vanoijen": {
-      "name": "Tapperij Van Ooijen",
-      "color": "#2b29e7",
-      "query": "Tapperij Van Ooijen Lichtenvoorde"
+      "name": "Van Ooijen",
+      "color": "#f2a93b",
+      "mark": "vanoijen",
+      "query": "Tapperij Van Ooijen Lichtenvoorde",
+      "short": "Van Ooijen",
+      "gridShort": "Van Ooijen",
+      "icon": "VO",
+      "color2": "#3854d9"
     },
     "rapenburg": {
-      "name": "Rapenburgsestraat · Café de Kruup + Van Ooijen",
-      "color": "#6b4b82",
-      "query": "Cafe de Kruup Lichtenvoorde"
+      "name": "Kruup–Van Ooijen",
+      "color": "#44e36f",
+      "mark": "kruupvanoijen",
+      "query": "Cafe de Kruup Lichtenvoorde",
+      "short": "Kruup–Van Ooijen",
+      "gridShort": "Kruup–VO",
+      "icon": "KV",
+      "color2": "#7957ff"
     },
     "doktertje": {
-      "name": "Bar 't Doktertje + Eetwinkel LEO",
-      "color": "#77a822",
-      "query": "Bar 't Doktertje Lichtenvoorde"
+      "name": "'t Doktertje/LEO",
+      "color": "#ff4d63",
+      "mark": "dokleo",
+      "query": "Bar 't Doktertje Lichtenvoorde",
+      "short": "'t Doktertje/LEO",
+      "gridShort": "'t Dok/LEO",
+      "icon": "D/L",
+      "color2": "#ff9f1c"
     },
     "kletskop": {
-      "name": "Café De Kletskop",
-      "color": "#1d9e9c",
-      "query": "Cafe De Kletskop Lichtenvoorde"
+      "name": "Kletskop",
+      "color": "#24e0d1",
+      "mark": "kletskop",
+      "query": "Cafe De Kletskop Lichtenvoorde",
+      "short": "Kletskop",
+      "icon": "KK",
+      "color2": "#0096a6"
     },
     "driehoek": {
-      "name": "De Driehoek",
-      "color": "#2f8a47",
-      "query": "De Driehoek Lichtenvoorde"
+      "name": "Driehoek",
+      "color": "#ff6b63",
+      "mark": "triangle",
+      "query": "De Driehoek Lichtenvoorde",
+      "short": "Driehoek",
+      "icon": "△",
+      "color2": "#c92d50"
     },
     "koppelpaarden": {
-      "name": "De Koppelpaarden",
-      "color": "#356f9e",
-      "query": "De Koppelpaarden Lichtenvoorde"
+      "name": "Koppelpaarden",
+      "color": "#f3c14d",
+      "mark": "horseshoe",
+      "query": "De Koppelpaarden Lichtenvoorde",
+      "short": "Koppelpaarden",
+      "gridShort": "Koppelpdn",
+      "icon": "KP",
+      "color2": "#795b22"
     },
     "vuurwerk": {
-      "name": "Vuurwerkshow · IJsbaan/Esstraat",
-      "color": "#287a3f",
-      "query": "Esstraat Lichtenvoorde"
+      "name": "Vuurwerk",
+      "color": "#4fd6ff",
+      "mark": "spark",
+      "query": "Esstraat Lichtenvoorde",
+      "short": "Vuurwerk",
+      "icon": "✦",
+      "color2": "#ff3cac"
     },
     "coucou": {
       "name": "Coucou",
-      "color": "#9b174f",
-      "query": "Coucou Lichtenvoorde"
+      "color": "#ff6cb5",
+      "mark": "coucou",
+      "query": "Coucou Lichtenvoorde",
+      "short": "Coucou",
+      "icon": "CO",
+      "color2": "#9b174f"
     }
   },
   "artists": {
@@ -101,7 +164,12 @@ window.KERMIS_DATA = {
       "songs": [
         "Bluegrass-versies van bekende pop- en rockhits"
       ],
-      "style": "Bluegrass · country · feest"
+      "style": "Bluegrass · country · feest",
+      "badges": [
+        "known"
+      ],
+      "badgeNote": "Internationaal actief; o.a. Sziget, Paaspop en Zwarte Cross en uitverkochte tours.",
+      "badgeSource": "https://www.zeeland.com/en/visit/10668_nl/the-hillbilly-moonshiners"
     },
     "The Rousers": {
       "rating": 4,
@@ -148,7 +216,12 @@ window.KERMIS_DATA = {
         "Dansen in de kroeg",
         "Fout (3x)"
       ],
-      "style": "Nederlandstalig · feestpop"
+      "style": "Nederlandstalig · feestpop",
+      "badges": [
+        "hitmaker"
+      ],
+      "badgeNote": "Miljoenen streams op “Limoncello” en landelijke radio-aandacht.",
+      "badgeSource": "https://harmspang.nl/"
     },
     "Dennis van Dam": {
       "rating": 3,
@@ -159,8 +232,22 @@ window.KERMIS_DATA = {
         "Dans Met Mij De Sirtaki",
         "Mucho Cerveza"
       ],
-      "style": "Nederlandstalig · feest"
+      "style": "Nederlandstalig · feest",
+      "badges": [
+        "hitmaker"
+      ],
+      "badgeNote": "“C'est la Vie” passeerde 1 miljoen streams; in 2023 ruim 2 miljoen Spotify-streams.",
+      "badgeSource": "https://nl.linkedin.com/posts/dennis-van-dam-2005b63b_een-mooie-waardering-in-ontvangst-mogen-nemen-activity-7141211580246953984-V2iA"
     },
+    "August van Engelen": {
+      "rating": 3,
+      "bio": "Nederlandstalige zanger en entertainer uit Deventer met eigen repertoire en energieke live-shows.",
+      "songs": [
+        "Blijf voor eeuwig bij me",
+        "Zoals ik leven wil",
+        "Mijn Liefste"
+      ],
+      "style": "Nederlandstalig · feest"},
     "Lara Millaa": {
       "rating": 3,
       "bio": "Nederlandstalige zangeres in het levenslied- en feestsegment.",
@@ -169,8 +256,7 @@ window.KERMIS_DATA = {
         "Had Ik Je Maar Nooit Gezoend",
         "Illusies"
       ],
-      "style": "Nederlandstalig · levenslied"
-    },
+      "style": "Nederlandstalig · levenslied"},
     "Kaj Hindriks": {
       "rating": 3,
       "bio": "Jonge Nederlandstalige feestartiest met veel meezingrepertoire.",
@@ -178,7 +264,33 @@ window.KERMIS_DATA = {
         "Welles Nietes",
         "Banksaldo"
       ],
-      "style": "Nederlandstalig · feestpop"
+      "style": "Nederlandstalig · feestpop"},
+    "Justen de Wildt": {
+      "rating": 4,
+      "bio": "Nederlandstalige artiest met sterke actuele streaming- en social-media-momentum.",
+      "songs": [
+        "Cheerio"
+      ],
+      "style": "Nederlandstalig · pop · feest",
+      "badges": [
+        "trending",
+        "hitmaker"
+      ],
+      "badgeNote": "‘Cheerio’ ging viraal op TikTok, bereikte de nummer 1-positie en passeerde 20 miljoen streams.",
+      "badgeSource": "https://www.rtl.nl/boulevard/artikel/5639049/justen-de-wildt-haalt-platina-vanwege-20-miljoen-streams-cheerio"
+    },
+    "Jesse & Claudia Hoeré": {
+      "rating": 3,
+      "bio": "Broer en zus met Nederlandstalig repertoire dat recent opnieuw veel aandacht kreeg via TikTok en andere socials.",
+      "songs": [
+        "Nederlandstalig repertoire"
+      ],
+      "style": "Nederlandstalig · feest",
+      "badges": [
+        "trending"
+      ],
+      "badgeNote": "Oudere nummers kregen in 2026 opnieuw sterke tractie via TikTok en social media.",
+      "badgeSource": "https://gelderland.headliner.nl/item/wat-een-plezier-broer-en-zus-uit-arnhem-gaan-opeens-viraal-met-oude-nummers-omroepgelderland-72337"
     },
     "Nikki Milou": {
       "rating": 3,

@@ -1,12 +1,12 @@
 {
   "name": "Kermis Lichtenvoorde 2026",
   "short_name": "Kermis L'voorde",
-  "description": "Interactieve timetable voor Kermis Lichtenvoorde 2026",
+  "description": "Neon festival timetable voor Kermis Lichtenvoorde 2026",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0f1014",
-  "theme_color": "#111827",
+  "background_color": "#06070d",
+  "theme_color": "#06070d",
   "lang": "nl-NL",
   "orientation": "portrait-primary",
   "icons": [

@@ -1,4 +1,4 @@
-const CACHE = "kermis-lichtenvoorde-2026-v1-5";
+const CACHE = "kermis-lichtenvoorde-2026-v2-3";
 const CORE = [
   "./",
   "./index.html",
@@ -8,7 +8,8 @@ const CORE = [
   "./manifest.webmanifest",
   "./icon-192.png",
   "./icon-512.png",
-  "./apple-touch-icon.png"
+  "./apple-touch-icon.png",
+  "./bomers-vip.svg"
 ];
 
 self.addEventListener("install", event => {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#111827">
+  <meta name="theme-color" content="#080912">
   <meta name="description" content="Interactieve timetable voor Kermis Lichtenvoorde 2026.">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -17,14 +17,17 @@
 <body>
   <header class="app-header">
     <div class="brand">
-      <div class="logo-mark" aria-hidden="true">KL</div>
+      <div class="logo-mark" aria-hidden="true"><span>KL</span></div>
       <div>
         <p class="eyebrow">13–15 september 2026</p>
         <h1>Kermis Lichtenvoorde</h1>
         <p id="statusLine" class="status-line">Volledig programma, jouw favorieten en wat er nu speelt.</p>
       </div>
     </div>
-    <button id="themeToggle" class="icon-button" type="button" aria-label="Wissel kleurthema" title="Wissel kleurthema">☾</button>
+    <div class="header-actions">
+      <a class="vip-header-chip" href="https://www.facebook.com/share/1WGTXNUGQo/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="VIP partner Vishandel Bomers op Facebook"><span>🐟</span><b>VIP</b><em>Bomers</em></a>
+      <button id="themeToggle" class="icon-button" type="button" aria-label="Wissel kleurthema" title="Wissel kleurthema">☾</button>
+    </div>
   </header>
 
   <main>
@@ -34,7 +37,7 @@
       <div class="search-row">
         <label class="search-box">
           <span aria-hidden="true">⌕</span>
-          <input id="searchInput" type="search" autocomplete="off" placeholder="Zoek artiest of locatie…" aria-label="Zoek artiest of locatie">
+          <input id="searchInput" type="search" autocomplete="off" placeholder="Zoek artiest of locatie in alle dagen…" aria-label="Zoek artiest of locatie">
         </label>
         <button id="filtersButton" class="secondary-button" type="button" aria-expanded="false" aria-controls="filtersPanel">Filters</button>
       </div>
@@ -59,6 +62,18 @@
           <button data-view="favorites" type="button">Mijn planning</button>
         </div>
         <button id="jumpNow" class="now-button" type="button">Nu</button>
+      </div>
+    </section>
+
+    <section class="vip-banner" aria-label="VIP partner Vishandel Bomers">
+      <img src="./bomers-vip.svg" alt="Vishandel Bomers" class="vip-banner-logo">
+      <div class="vip-banner-copy">
+        <span class="vip-kicker">VIP · Very Important Supplier</span>
+        <p><strong>Even opladen tussen de optredens?</strong> Haal iets lekkers bij Vishandel Bomers – alle dagen aanwezig.</p>
+      </div>
+      <div class="vip-banner-actions">
+        <a class="facebook" href="https://www.facebook.com/share/1WGTXNUGQo/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.vishandelbomers.nl/" target="_blank" rel="noopener">Site</a>
       </div>
     </section>
 
