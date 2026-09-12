@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Interactieve timetable voor Kermis Lichtenvoorde 2026.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Kermis L'voorde">
+  <title>Kermis Lichtenvoorde 2026</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <link rel="icon" href="./icon-192.png" sizes="192x192">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <div class="logo-mark" aria-hidden="true">KL</div>
+      <div>
+        <p class="eyebrow">13–15 september 2026</p>
+        <h1>Kermis Lichtenvoorde</h1>
+        <p id="statusLine" class="status-line">Volledig programma, jouw favorieten en wat er nu speelt.</p>
+      </div>
+    </div>
+    <button id="themeToggle" class="icon-button" type="button" aria-label="Wissel kleurthema" title="Wissel kleurthema">☾</button>
+  </header>
+
+  <main>
+    <section class="toolbar" aria-label="Bediening timetable">
+      <div id="dayTabs" class="day-tabs" role="tablist" aria-label="Kies dag"></div>
+
+      <div class="search-row">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" autocomplete="off" placeholder="Zoek artiest of locatie…" aria-label="Zoek artiest of locatie">
+        </label>
+        <button id="filtersButton" class="secondary-button" type="button" aria-expanded="false" aria-controls="filtersPanel">Filters</button>
+      </div>
+
+      <div id="filtersPanel" class="filters-panel" hidden>
+        <div>
+          <h2>Locaties</h2>
+          <div id="locationFilters" class="chip-wrap"></div>
+        </div>
+        <div>
+          <h2>Type</h2>
+          <div id="genreFilters" class="chip-wrap"></div>
+        </div>
+        <label class="switch-row"><input id="liveOnly" type="checkbox"> Alleen live / artiesten</label>
+        <button id="resetFilters" class="text-button" type="button">Wis filters</button>
+      </div>
+
+      <div class="view-row">
+        <div class="segmented" role="group" aria-label="Weergave">
+          <button data-view="list" class="active" type="button">Lijst</button>
+          <button data-view="grid" type="button">Timetable</button>
+          <button data-view="favorites" type="button">Mijn planning</button>
+        </div>
+        <button id="jumpNow" class="now-button" type="button">Nu</button>
+      </div>
+    </section>
+
+    <section id="qualityNote" class="quality-note" hidden></section>
+
+    <section id="installHint" class="install-hint" hidden>
+      <strong>Tip:</strong> op iPhone kun je deze site als app bewaren via <em>Delen → Zet op beginscherm</em>.
+      <button id="dismissInstallHint" type="button" aria-label="Sluit tip">×</button>
+    </section>
+
+    <section id="nowPanel" class="now-panel" hidden aria-live="polite"></section>
+    <section id="content" class="content" aria-live="polite"></section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Snelle navigatie">
+    <button data-nav="list" class="active" type="button"><span>☷</span>Programma</button>
+    <button data-nav="favorites" type="button"><span>♥</span>Mijn planning</button>
+    <button id="locationsNav" type="button"><span>⌖</span>Locaties</button>
+  </nav>
+
+  <dialog id="eventDialog" class="sheet-dialog">
+    <div class="sheet-handle" aria-hidden="true"></div>
+    <form method="dialog"><button class="dialog-close" aria-label="Sluiten">×</button></form>
+    <div id="eventDetails"></div>
+  </dialog>
+
+  <dialog id="locationsDialog" class="sheet-dialog">
+    <div class="sheet-handle" aria-hidden="true"></div>
+    <form method="dialog"><button class="dialog-close" aria-label="Sluiten">×</button></form>
+    <div class="dialog-content">
+      <p class="eyebrow">Lichtenvoorde centrum</p>
+      <h2>Locaties</h2>
+      <p class="muted">Op iPhone kun je Apple Maps of Google Maps openen.</p>
+      <div id="locationsList" class="locations-list"></div>
+    </div>
+  </dialog>
+
+  <noscript>Deze timetable heeft JavaScript nodig.</noscript>
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
